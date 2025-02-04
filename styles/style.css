@@ -26,6 +26,11 @@
     border-radius: 8px;
     background-color: rgba(255, 144, 14, 1);
   }
+  .section-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+  }
   /* ==========body part ============== */
   .body{
     max-width: 1267px;
@@ -81,11 +86,13 @@
   }
   .banner-heading{
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
   }
   .banner-description{
     font-size: 16px;
     font-weight: 400;
+    margin: 6px;
+    color: #727272;
   }
   .btn{
     margin-top: 30px;
@@ -101,6 +108,8 @@
   .gallery{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
     gap: 55px;
     padding: 0 24px;
     margin: 0 auto;
@@ -110,13 +119,68 @@
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(2, 1fr);
+
   }
   .gallery-container img{
     width: 100%;
   }
   .gallery-info{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+  /* ====years-section========== */
+  .years{
+    display: grid;
+    gap: 110px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .years .collumn{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 18px 22px;
+  }
+  .year-info>.banner-heading{
+    margin-bottom: 20px;
+  }
+  .subtitle{
+    margin: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+  }
+  .year-img{
+    width: 100%;
+  }
+  .year-img img{
+    width: 100%;
+  }
+  .collumn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  #badge{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    background-color: rgba(255, 144, 14, 1);
+    padding: 30px 36px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    margin-top: -90px;
+    margin-left: -80px;
+  }
+  #badge-number{
+    font-weight: bold;
+    font-size: 42px;
+  }
+  #experience{
+    font-weight: 500;
+    font-size: 20px;
   }
