@@ -5,6 +5,9 @@
     font-style: normal;
   }
   /* shared style */
+  .hide{
+    display: none;
+  }
   .dark-1{
     color: #131313;
   }
@@ -25,6 +28,12 @@
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 144, 14, 1);
+  }
+  .section-title{
+    font-weight: bold;
+    font-size: 35px;
+    color: #131313;
+    margin: 12px;
   }
   .section-description{
     font-size: 14px;
@@ -183,4 +192,105 @@
   #experience{
     font-weight: 500;
     font-size: 20px;
+  }
+  /* facts section========= */
+  .facts{
+    margin-top: 90px
+  }
+  /* card container========== */
+  .card-container{
+    margin-top: 80px;
+    display: flex;
+    gap: 90px;
+  }
+  .card{
+    width: 200px;
+    padding: 26px 32px;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .card img{
+    width: 40px;
+  }
+  .card .number{
+    margin: 4px;
+  }
+  .card p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #727272;
+    margin: 2px;
+  }
+  /* =========our sponchors section============ */
+  .sponchor{
+    margin-top: 160px;
+  }
+  .sponchor-info{
+    
+    max-width: 540px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .sponchor-icons{
+    display: flex;
+    gap: 100px;
+    width: 100%;
+  }
+  .sponchor-icons img{
+    filter: grayscale(100%);
+    width: 100%;
+  }
+  .footer{
+    margin-top: 130px;
+    padding: 30px;
+  }
+  /* responsive desine for small device */
+  @media screen and (max-width: 576px) {
+    .navbar, .gallery-container, .sponchor-icons, .card-container{
+        flex-direction: column;
+    }
+    .gallery, .years{
+        grid-template-columns: 1fr;
+    }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .card-container, .sponchor-icons{
+        gap: 30px;
+    }
+    .card-container .card{
+        margin: 0 auto;
+    }
+    .sponchor-icons div{
+        margin: 0 auto;
+    }
+    .sponchor-icons img{
+        filter: grayscale(100%);
+        width: 100%;
+      }
+  }
+  /* responsive design for notepad */
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    .gallery, .years{
+        grid-template-columns: 1fr;
+    }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-container .card {
+      margin: 0 auto;
+    }
+    .sponchor-icons{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
